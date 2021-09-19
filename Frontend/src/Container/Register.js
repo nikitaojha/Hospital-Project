@@ -63,7 +63,7 @@ class Register extends Component {
                                 </div>
                                 <div class="form-group">
                                     <h3 class="float-left"><label>Role:</label></h3>
-                                    <input class="form-control" placeholder="Enter your Role (Enter User if youre a customer)" type="text" name="user_role" value={this.state.user_role} onChange={(event) => { this.setState({ user_role: event.target.value }) }} />
+                                    <input class="form-control" placeholder="Enter your Role " type="text" name="user_role" value={this.state.user_role} onChange={(event) => { this.setState({ user_role: event.target.value }) }} />
                                 </div>
                                 <div class="form-group">
                                     <button type="signup" class="btn btn-light float-right" onClick={(e) => this.registerUser(e)}>Register</button>

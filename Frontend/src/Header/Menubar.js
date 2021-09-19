@@ -44,7 +44,7 @@ class Header extends Component{
       else if(localStorage.getItem('token') && localStorage.getItem('usertype')==='User')
       {
         var menu = 
-        <Navbar expand="lg" light style={{ backgroundColor: '#07416e' }} mb="3" >
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <a class="navbar-brand" href="/home">Our Hospital</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +84,7 @@ class Header extends Component{
               </div>
               
             </nav>
-            </Navbar>
+           
       }
       else 
       {
