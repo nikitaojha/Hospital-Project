@@ -5,7 +5,9 @@
 
 import {Component} from 'react'
 import { Link } from 'react-router-dom';
+import { Navbar, Nav, Button, Form, Collapse, ButtonGroup } from 'bootstrap-4-react';
 class Header extends Component{
+  
   logout = ()=>{
     localStorage.removeItem('token')
     localStorage.removeItem('usertype')
@@ -14,6 +16,7 @@ class Header extends Component{
     render(){
       if(localStorage.getItem('token') && localStorage.getItem('usertype')==='Admin'){
         var menu = 
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <a class="navbar-brand" href="/home">Our Hospital</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +44,7 @@ class Header extends Component{
       else if(localStorage.getItem('token') && localStorage.getItem('usertype')==='User')
       {
         var menu = 
+        <Navbar expand="lg" light style={{ backgroundColor: '#07416e' }} mb="3" >
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <a class="navbar-brand" href="/home">Our Hospital</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,12 +82,14 @@ class Header extends Component{
                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
               </div>
+              
             </nav>
+            </Navbar>
       }
       else 
       {
         var menu = 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
               <a class="navbar-brand" href="/home">Our Hospital</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

@@ -16,7 +16,8 @@ class Home extends Component {
                         <h1>Qualified Doctors</h1>
                         <h3>You can trust us </h3>
                     </div>
-                    <video src="/videos/video-2.mp4" autoPlay loop muted />
+                    <img src="health.jpg"/>
+                    {/* <video src="/videos/video-2.mp4" autoPlay loop muted /> */}
 
                 </div>
 
